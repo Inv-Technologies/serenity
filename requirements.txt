@@ -1,2 +1,7 @@
+discord.py[voice] ~= 0.16.0
 pip
-discord.py
+youtube_dl
+colorlog
+cffi --only-binary all; sys_platform == 'win32'
+requests
+beautifulsoup4
