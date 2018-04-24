@@ -9,20 +9,9 @@ bot.remove_command("help")
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(game=discord.Game(name="Use wiki. for commands "))
+    await bot.change_presence(game=discord.Game(name="Serenity and Peace"))
     print("Bot online")
-bot.remove_command("help")
-@bot.command(pass_context=True)
-async def help(ctx):
-    
-    embed = discord.Embed(title="AQ3D Discord Wiki Bot Help Menu", description="Here you will find all the help you need. Not satisfied? Tag one of the mods or wiki team members..", color=0x00ff00)
-    embed.add_field(name="My prefixes".format("null"), value="My prefix is wiki. or item.")
-    embed.add_field(name="Armors".format("null"), value="Type wiki.\"categoryname\" for a list from that category")
-    embed.add_field(name="Categories".format("null"), value=categories)
-    embed.add_field(name="Help Server".format("null"), value="Need extra help with the bot? Type wiki.supportserver to join our Official Support Server and report any issues.")
-    embed.set_thumbnail(url = "https://thumb.ibb.co/hheFjx/ndice.png")
-    embed.set_footer(text="Serenity Bot ~ Developed by Alphi#5113")
-    await bot.say(embed=embed)     
+bot.remove_command("help") 
 @bot.command()
 async def supportserver():
     await bot.say("```Official Support Server``` " + " https://discord.gg/YAZNjbe")
