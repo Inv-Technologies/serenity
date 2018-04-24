@@ -1,1 +1,1 @@
-web: gunicorn hello:app
+worker: python3 serenity.py
